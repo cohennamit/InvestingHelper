@@ -1,0 +1,618 @@
+<!-- © 2024 InvestingHelper by Or Malka. All rights reserved. | © 2024 InvestingHelper by Or Malka. כל הזכויות שמורות. -->
+<!-- /*!
+ * Copyright (c) 2024 InvestingHelper by Or Malka. All rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ */
+/*!
+ * זכויות יוצרים (c) 2024 InvestingHelper מאת אור מלכה. כל הזכויות שמורות.
+ * העתקה בלתי מורשית של קובץ זה, בכל אמצעי, אסורה בהחלט.
+ * קנייני וסודי.
+ */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>InvestingHelper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mq.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="icon" href="images/logos/favicon-32x32.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KR7N24V64"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4KR7N24V64');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '781422994176492');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=781422994176492&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div class="popup-overlay" id="popup-overlay"></div>
+
+    <div class="popup" id="terms-popup">
+        <div dir="rtl" class="popup-header">
+            <!-- <p class="bold-text">text</p> -->
+            תנאי השימוש & מדיניות הפרטיות של InvestingHelper
+        </div>
+        <div dir="rtl" class="popup-content">
+            <p class="bold-text">תנאי השימוש</p>
+            תאריך עדכון: 15/07/2024
+            <div class="blank-row"></div>
+            <!-- blank row - ירידת שורה עם רווח -->
+            השימוש והביקור באפליקציה אליה נכנסת יעשו בכפוף לתנאי השימוש האמורים במסמך זה (להלן: "תנאי השימוש"), אותם
+            עליך לקרוא בעיון. הנך מתבקש שלא לעשות כל שימוש באפליקציה, ככל שאינך מסכים/ מקבל איזה מתנאי השימוש האמורים
+            במסמך זה מכל סיבה שהיא.
+            תנאי השימוש מנוסחים בלשון זכר וזאת משיקולי נוחות בלבד, אך האמור בתנאי השימוש יפה ונכון ללא הבדל מין/ מגדר/
+            ישות משפטית.
+            למפעיל האפליקציה ולו בלבד נתונה הזכות לעדכן ו/או למחוק ו/או לתקן ו/או לעשות כל שינוי בתנאי השימוש מעת לעת,
+            וזאת בכפוף לשיקול דעתו הבלעדי, בכפוף לכל דין.
+
+            <p class="bold-text">אודות האפליקציה והשימוש בה</p>
+            <!-- br - ירידת שורה בלי רווח -->
+            1. מפעיל האפליקציה "Investing Helper" בכתובת: www.investinghelper.github/App (להלן: "האפליקציה"), הוא אור
+            דוד מלכה ת.ז 323021048 (להלן: "המפעיל/ מפעיל האפליקציה").
+            <br>
+            2. רישום לאפליקציה והורדתה ו/או מילוי שאלון ההתאמה באפליקציה, מהווה אישור, כי משתמש האפליקציה קרא את תנאי
+            שימוש אלו, את תנאי מדיניות הפרטיות של האפליקציה, ואת הגילוי הנאות המפורסם באפליקציה והבין אותם במלואם וכי
+            הוא מתחייב כלפי מפעיל האפליקציה וכלפי יתר המשתמשים באפליקציה, כי יפעל על פיהם.
+            <br>
+            3. בכל פעם שימלא משתמש האפליקציה את השאלון האמור, בכך יאשרר ויתקף מחדש את האמור לעיל וזאת בהינתן האפשרות, כי
+            תנאי השימוש ומדיניות הפרטיות באפליקציה עשויים להשתנות מעת לעת (תוך עדכון תנאי השימוש) ולפיכך האחריות להתעדכן
+            בהם מוטלת על המשתמש באפליקציה בלבד.
+            <br>
+            4. מטרת האפליקציה היא למסור למשתמשי האפליקציה מידע אודות אפיקי השקעה שונים בהתאם למילוי שאלון על ידי משתמש
+            האפליקציה ותשובותיו. אין באפליקציה ובמידע שבה משום ייעוץ השקעות וכזה ככל שנדרש למשתמש יש לקבל מבעל רישיון
+            ייעוץ השקעות.
+            <br>
+            5. מפעיל האפליקציה אינו בעל רישיון ייעוץ השקעות ותוכן האפליקציה מבוסס על מידע כללי שנלמד ואינו מחליף ייעוץ
+            השקעות.
+            <br>
+            6. באפליקציה רשאי להשתמש כל מי שהוא אזרח/תושב ישראלי, מגיל 18 ומעלה, שברשותו האמצעים המתאימים להשתמש
+            באפליקציה, לרבות תוכנות/חומרה מתאימים וגישה למרשתת.
+            <br>
+            7. האפליקציה מיועדת לשימוש אישי בלבד ואין לעשות בה שימוש מסחרי מכל סוג שהוא.
+            <br>
+            8. בהתאם, משתמש האפליקציה לא יעשה כל שימוש מסחרי באפליקציה, או שימוש שאינו פרטי ולצרכים אישיים, ולא יעשה
+            באפליקציה כל שימוש אחר, לרבות שינוי, התאמה, תרגום או יצירה של עבודות נגזרות המבוססות על האפליקציה, הנדסה
+            לאחור של האפליקציה, פירוק, התחקות אחר הקוד של האפליקציה, הפצתה או העברתה לכל צד שלישי וכל שימוש שאינו כדין,
+            שימוש כנ"ל יגרור חיוב של המשתמש בתשלום למפעיל, בגין שימוש זה.
+            <br>
+            9. מפעיל האפליקציה שומר לעצמו את הזכות להפסיק את שירותיו בכל עת.
+            <br>
+            10. השימוש אינו כרוך בתשלום לעת עתה, אולם למפעיל שמורה הזכות להפוך חלק/כל השירותים באפליקציה, לשירותים
+            בתשלום וזאת לפי שיקול דעתו הבלעדי. גביית התשלום לא תחל, אלא לאחר שתפורסם באפליקציה או תישלח הודעה למשתמש על
+            כך. ככל שייגבה תשלום כאמור, יהיה חייב המשתמש בתשלום, עבור צריכת השירותים שבתשלום.
+            <p class="bold-text">הגבלת אחריות</p>
+            11. יובהר, כי המפעיל לא יהיו אחראי לנכונות המידע ו/או להסתמכות המשתמש על המידע המופיע באפליקציה וכאמור לעיל,
+            אין במידע המופיע באפליקציה, כדי להוות ייעוץ מסוג כלשהוא (השקעות/ ביטוחי/ משפטי/ פנסיוני/ כלכלי/ חשבונאי/
+            מיסויי או אחר) ובפרט יודגש, כי האפליקציה ובכלל זה, המידע האמור בו אינו מהווה ייעוץ השקעות ו/או שיווק השקעות
+            ו/או ניהול תיקי השקעות כהגדרתם בחוק הסדרת העיסוק בייעוץ השקעות, בשיווק השקעות ובניהול תיקי השקעות,
+            תשנ"ה-1995 ומדובר במידע כללי בלבד. לצורך קבלת ייעוץ מסוג כלשהו יהיה על המשתמש לפנות לבעל הרישיון המתאים לשם
+            כך.
+            <br>
+            12. קבלת ייעוץ, שיווק, ביצוע עסקאות והתאמת אפיקי השקעה רלוונטיים למשתמש, ייעשו באמצעות בעלי רישיון מתאים
+            בלבד ולא באמצעות אפליקציה זו.
+            <br>
+            13. בהתאם לאמור לעיל, המפעיל לא יהיה אחראי להשלכות ו/או תוצאות ו/או הפסדים ו/או אובדן רווחים ו/או נזקים,
+            ישירים ו/או עקיפים, שעלולים להיגרם בשל החלטות שקיבל משתמש האפליקציה ולרבות החלטות השקעה שקיבל בעקבות המידע
+            אליו נחשף באפליקציה /או בעקבות הסתמכות על מידע זה. כל החלטה, ולרבות החלטת השקעה, שיקבל משתמש האפליקציה היא
+            באחריותו הבלעדית של משתמש האפליקציה.
+            <br>
+            14. המידע הנמסר באפליקציה למשתמש האפליקציה, ובכלל זה המידע על אפיקי ההשקעה השונים, מותאם על פי מאפיינים
+            שונים וכלליים לתשובותיו של המשתמש על השאלון המוצג באפליקציה, משכך מסירת מידע שגוי במילוי השאלון ו/או מענה לא
+            מדויק על השאלון המוצג באפליקציה, עלולים להשפיע על מידת התאמת המידע שנמסר למשתמש באפליקציה, כך שהמידע לא יהיה
+            רלוונטי.
+            <br>
+            15. המפעיל לא אחראי לכל נזק או שינוי כלשהו שיגרם לציוד הקצה של המשתמש, כתוצאה משימוש באפליקציה (חומרה או
+            אפליקציה) והמשתמש באפליקציה הוא האחראי הבלעדי להתאמת ציוד הקצה שלו לשימוש באפליקציה.
+            <br>
+            16. מפעיל האפליקציה לא יישא באחריות כלשהי בגין פעילות בלתי חוקית של משתמשי האפליקציה ו/או של כל גורם אחר,
+            שאינו מצוי בשליטתו המלאה.
+            <br>
+            17. כל שימוש באפליקציה, אשר עשוי להזיק לאפליקציה או למפעיל או לצדדי ג' ולרבות למשתמשים אחרים, הוא אסור
+            בהחלט. המשתמש ישפה או יפצה את המפעילים או את צדדי ג', בגין כל נזק או הוצאה אשר ייגרמו להם, כתוצאה ממעשה או
+            מחדל שלו, בשימוש באפליקציה.
+            <p class="bold-text">הגבלת שימוש ועדכון שירותים/אפליקציה </p>
+            18. למפעיל שיקול הדעת הבלעדי למנוע שימוש באפליקציה על ידי אדם וכל קבוצת אנשים, בין אם אושר שימוש כזה בעבר,
+            אם לאו, לפי שיקול דעתו הבלעדי וללא צורך במתן הודעה מראש.
+            <br>
+            19. השירותים המוצעים על-ידי מפעיל האפליקציה משתנים ומתעדכנים מעת לעת; מפעיל האפליקציה ומי שקשור בו שומר
+            לעצמו את הזכות להסיר שירותים מסוימים או להוסיף שירותים מסוימים במסגרת כלל השירותים הניתנים על-ידו, בהתאם
+            לשיקול דעתו הבלעדי; חלק מהשירותים עשויים לכלול תנאי שימוש נוספים וייעודיים, וככל שהוצגו בפני משתמש האפליקציה
+            תנאים נוספים במסגרת השימוש בשירותים, תנאים נוספים אלו ייחשבו לכל דבר ועניין כחלק אינטגרלי ובלתי נפרד מתנאי
+            השימוש לעיל.
+            <p class="bold-text">קניין רוחני</p>
+            20. מבלי לפגוע בכלליות האמור לעיל, אין להפיץ, להעתיק לשכפל ו/או להציג את תכולת האפליקציה, לרבות המידע
+            המפורסם בו בכל אופן אחר, בין אם במרשתת ובין אם בכל אמצעי אחר, בין במישרין ובין בעקיפין, אלא באישור מראש
+            ובכתב ממפעיל האפליקציה.
+            <br>
+            21. יצירות ו/או סימני מסחר ו/או עיצובים ו/או פרסומים באפליקציה הם בבעלות המפעיל או צד ג' אחר עמו התקשר
+            המפעיל בהסכם ו/או מצויים באפליקציה על פי הרשאת בעליהם ואין לעשות שימוש באיזה מהסימנים המופיעים באפליקציה,
+            לרבות לוגו האפליקציה, שם האפליקציה, קישוריות לאפליקציה, שמות מסחריים ו/או יצירות ו/או כל קניין רוחני כלשהו
+            השייך למפעיל או מי מטעמו ו/או המצוי באפליקציה, מבלי שהתקבל אישורו של המפעיל מראש ובכתב.
+            <p class="bold-text">דין וסמכות שיפוט</p>
+            22. הדין שיחול על תנאי שימוש אלו הוא הדין הישראלי בלבד והסמכות לדון בכל מחלוקת בקשר אליו תהיה נתונה אך ורק
+            לבתי המשפט במחוז תל אביב.
+            <p class="bold-text">יצירת קשר עם מפעיל האפליקציה</p>
+            23. לכל שאלה ופנייה בקשר לתנאי השימוש באפליקציה או מדיניות הפרטיות של האפליקציה, רשאי משתמש האפליקציה ליצור
+            קשר עם מפעיל האפליקציה בכתובת: ormshopsentrepreneurs@gmail.com.
+            <br>
+            <p class="bold-text">מדיניות פרטיות</p>
+            1. מפעיל האפליקציה מכבד את פרטיות משתמשי האפליקציה. מדיניות פרטיות זו תתאר את האופן שבו מפעיל האפליקציה פועל
+            בקשר עם מידע, כמשמעותו בחוק הגנת הפרטיות התשמ"א-1981 ("מידע" ו-"חוק הגנת הפרטיות" בהתאמה), אותו הוא אוסף
+            אודות משתמשי האפליקציה. מפעיל האפליקציה רשאי לעדכן את מדיניות הפרטיות מעת לעת ומשכך על משתמשי האפליקציה
+            לבדוק לעיתים תכופות אם נעשו בה שינויים. ככל שיתבצעו שינויים או עדכונים במדיניות הפרטיות להלן, הללו ייכנסו
+            לתוקף באופן מיידי והודעה לגביהם תפורסם בדף הנחיתה באפליקציה.
+            <br>
+            2. סוגי מידע
+            מדיניות הפרטיות תתייחס לשני סוגים של מידע הנבדלים זה מזה.
+            "מידע אישי" הוא מכלול הנתונים, העשויים כשלעצמם, או כאשר הם מצויים זה לצד זה, לשמש לזיהויו של אדם, ובכלל זה
+            שם פרטי ושם משפחה, כתובת מגורים/כתובת למשלוח דואר, תמונת פרופיל, כתובת דואר אלקטרוני וכל פרט אישי אחר שמשתמש
+            האפליקציה מוסר למפעיל האפליקציה בעת השימוש באפליקציה ובשירותיה; כמו כן, מידע אודות שימושים ספציפיים שמשתמש
+            האפליקציה מבצע באמצעות שירותי מפעיל האפליקציה ייאסף אף הוא באמצעות האפליקציה וייחשב כחלק מה-"מידע האישי"
+            האמור לעיל.
+            בניגוד למידע האישי, "מידע סטטיסטי" הינו מידע המכיל נתונים שונים, אשר אינם מזהים ולא יכולים להביא לידי חשיפתך
+            ולגילוי של מקור הנתונים; המידע הסטטיסטי, הנאסף על-ידנו ועל-ידי צדדים שלישיים עשוי להכיל מידע על נוהגי השימוש
+            שלך באפליקציה, השירותים אותם ביקשת, מיקומו הגיאוגרפי של המכשיר הנייד שממנו התחברת לאפליקציה וכדומה; המידע
+            הסטטיסטי שנאסף על-ידי האפליקציה ובמקרים מסוימים על-ידי צדדים שלישיים נשמר בנפרד מהמידע האישי אודותיך,
+            והשימוש בו הינו שונה מהשימוש אשר עושה מפעיל האפליקציה במידע האישי, והכול כפי שיפורט להלן.
+            למען הסר ספק, כל מידע סטטיסטי אשר קשור או מקושר למידע אישי ייחשב למידע אישי, כל עוד זיקה זו מתקיימת.
+            <br>
+            - יובהר, כבר עתה, כי השימוש באפליקציה אינו מותנה במסירת פרטים אישיים אודות משתמשי האפליקציה ומשכך בשלב זה,
+            לא יאסף מידע אישי כהגדרתו במסמך מדיניות זה, מלבד מידע אודות שימושים ספציפיים שמשתמש האפליקציה מבצע באמצעות
+            שירותי מפעיל האפליקציה.
+            <br>
+            - אולם, מפעיל האפליקציה שומר לעצמו הזכות לשנות את האפליקציה בעתיד, כך שיידרש משתמש האפליקציה למלא פרטי מידע
+            אישי, כהגדרתו במסמך זה, ובמקרה זה, המידע האישי שמשתמש האפליקציה ימסור למפעיל האפליקציה (מלבד נתונים הקשורים
+            להליך עיבוד התשלומים, כפי שמפורט להלן) יישמר במאגר המידע המאובטח של מפעיל האפליקציה והגישה אליו תהיה מוגבלת
+            בלבד.
+            <br>
+            - מפעיל האפליקציה רשאי ועשוי לבצע שימוש במידע כמפורט להלן:
+            <br>
+            א. מפעיל האפליקציה ישתמש במידע האישי שמסר משתמש האפליקציה ו/או במידע הסטטיסטי שנאסף אצלו לצורך אספקת
+            השירותים, ולצורך שינוי ושיפור התכנים והשירותים כך שיתאימו לאופי המשתמשים, לרבות להעדפותיו של משתמש האפליקציה
+            ממש, כפי שמשתקף מניתוח המידע הסטטיסטי שנאסף אצל מפעיל האפליקציה לגבי הרגלי השימוש של המשתמשים באפליקציה.
+            <br>
+            ב. מפעיל האפליקציה ישתמש במידע הסטטיסטי שנאסף ונאגר אצלו לצרכיו הפנימיים, השיווקיים או המסחריים, לרבות על
+            מנת לדאוג לתפעול האפליקציה ופיתוחה, לשיפור מבנה האפליקציה והשירותים הניתנים בה וכדומה; לשם כך, עשוי מפעיל
+            האפליקציה להסתייע בצדדים שלישיים לצורך איסוף וניתוח המידע הסטטיסטי והאנונימי כדי ללמוד על הרגלי השימוש של
+            משתמשי האפליקציה, באופן שלא יזהה את משתמשי האפליקציה באופן אישי.
+            <br>
+            ג. מפעיל האפליקציה ישתמש במידע שנאסף אצלו לכל מטרה אחרת בקשר עם אספקת השירותים, לרבות כל מטרה המפורטת
+            במדיניות זו ו/או בסעיפים אחרים בתנאי השימוש.
+            <br>
+            3. מסירת מידע לצד שלישי.
+            מידע אישי: – מפעיל האפליקציה לא יעביר לצדדים שלישיים את המידע האישי אלא באחד המקרים המפורטים להלן:
+            - אם מפעיל האפליקציה ביקש את רשות משתמש האפליקציה, ומשתמש האפליקציה נתן את הסכמתו המפורשת לכך;
+            <br>
+            - אם מסירת המידע האישי הינה לשלוחים של מפעיל האפליקציה ו/או לפועלים מטעמו, והיא במידה הנדרשת והחיונית לצורך
+            אספקת השירותים ותפעול האפליקציה;
+            <br>
+            - על מנת למלא אחר כל דין, לרבות בתגובה להליך משפטי, צו גילוי או בקשה של בית משפט או כל ערכאה מוסמכת או רשות
+            אחרת, המורה למפעיל האפליקציה למסור את פרטיך או המידע האישי אודותיך לידי בית המשפט או הערכאה או הרשות האחרת
+            או לידי צד שלישי כלשהו;
+            <br>
+            - במקרה של מחלוקת משפטית בין משתמש האפליקציה לבין מפעיל האפליקציה, שתחייב את חשיפת פרטיו;
+            <br>
+            - אם משתמש האפליקציה יבצע באמצעות האפליקציה פעולות אשר לדעת מפעיל האפליקציה עומדות בניגוד לדין או בניגוד
+            לתנאי ההסכם;
+            <br>
+            - אם מפעיל האפליקציה ימכור את פעילותו, כולה או חלקה, לצד שלישי כלשהו, בתמורה או שלא בתמורה, בין אם בדרך של
+            המחאת זכויות ובין אם בדרך של מתן רישיון או רישיון-משנה, וכן במקרה שמפעיל האפליקציה יתמזג עם גוף אחר או ימזג
+            את פעילותו עם פעילותו של צד שלישי, ובלבד שצד שלישי זה יהיה מחויב למלא אחר כללי תנאי השימוש, לרבות מדיניות
+            הפרטיות.
+            <br>
+            4. מפעיל האפליקציה לא יאסוף על משתמש האפליקציה מידע אישי ללא קבלת הסכמתו, אשר ניתנת, בין היתר במסגרת קבלתו
+            את תנאי השימוש.
+            <br>
+            5. משתמש האפליקציה אינו מחויב למסור מידע אישי על פי חוק; כמשתמש האפליקציה הנך מסכים/ה ומצהיר/ה בזאת שהמידע
+            האישי שהינך מספק/ת למפעיל האפליקציה ניתן מרצונך החופשי, על מנת שמפעיל האפליקציה יוכל לספק עבורך את השירותים
+            וכיוצא בכך הינך מסכים/ה כי מפעיל האפליקציה ישמור את המידע שסיפקת לה במאגר מידע אשר יתכן ויירשם, בהתאם
+            לדרישות החוק.
+            <br>
+            6. עוגיות (Cookies), אחסון מקומי וכלי ניתוח
+            <br>
+            בשעת השימוש באפליקציה, מפעיל האפליקציה או צדדים שלישיים עשויים להשתמש בטכנולוגיה אשר מקובלת בתעשייה ומוכרת
+            כ"עוגיות" ו/או Analytics- Google analytics, Meta pixel, המאחסנת מידע מסוים במכשיר הנייד ו/או במחשב של
+            המשתמש, מאפשרת למפעיל האפליקציה או לצדדים שלישיים להפעיל מאפיינים מסוימים באופן אוטומטי, בין היתר, במטרה
+            לשפר את חווית השימוש של המשתמש בשירותי מפעיל האפליקציה; העוגיות וכלי ה- Analytics יסייעו למפעיל האפליקציה
+            לנתח את הפעילות באפליקציה ואף הפעלה של תהליך אוטומטי של התחברות לאפליקציה.
+            <br>
+            7. כלי ה- Analytics, כאמור, נועדו לשיפור יעילות השימוש באפליקציה ובמסגרתה יעודכן משתמש האפליקציה, כי במסגרת
+            הפעלתה נעשה שימוש במערכות Google analyticsו- Meta pixel, המשתמשות בעיקר בקבצי Cookie של גולשים ואף כתובות IP
+            כדי לדווח למפעיל האפליקציה על אינטראקציות במערכותיו למטרות אבטחה וניהול משתמשים ולשם שימוש של בעלי כלים אלו
+            לשם התאמת פרסומות מטעמם. למידע רחב יותר אודות המערכות האמורות, לחץ על הקישוריות הבאות:
+            <br>
+            https://support.google.com/analytics/answer/6004245
+            https://www.facebook.com/business/tools/meta-pixel
+            <br>
+            מרבית דפדפני האינטרנט מאפשרים למשתמשים למחוק עוגיות ממכשיר המשתמש, לחסום קבלה של עוגיות או לקבל התראות לפני
+            אחסונן של עוגיות; עם זאת, יש לשים לב כי אם המשתמש ימחק את העוגיות או לא יאפשר את אחסונן, החוויה המקוונת של
+            המשתמש דרך האפליקציה תהיה מוגבל וייתכן אף כי תימנע.
+            <br>
+            8. זכות עיון במידע
+            משתמש האפליקציה זכאי לעיין במידע האישי אשר נצבר עליו במאגר המידע של מפעיל האפליקציה; לפני שיוכל לעיין ו/או
+            לעדכן ו/או למחוק את המידע האישי אשר נצבר עליו, על מפעיל האפליקציה לאמת את זהותך, על פי שיקול דעתו הבלעדי;
+            אימות הזהות עשוי לכלול, בין היתר, שאלות על כתובת הדואר האלקטרוני שלך, קוד אימות שישלח למספר הטלפון שלך
+            ושאלות נוספות (להלן: "הליך הזיהוי"); לאחר שיקבל מפעיל האפליקציה בקשה לעיון במידע, יפעל על מנת לספק לך את
+            המידע המבוקש בתוך זמן סביר; אם מצא משתמש האפליקציה, כי המידע הינו שגוי או שאינו מעודכן, הוא רשאי לפנות
+            למפעיל האפליקציה על-מנת לתקן ו/או לעדכן את המידע ו/או אם ברצונו למחוק את המידע האישי אודותיו ממאגר המידע של
+            מפעיל האפליקציה, בכתובת הדואר האלקטרוני הבאה ormshopsentrepreneurs@gmail.com.; מחיקת המידע כאמור עלולה למנוע
+            ממפעיל האפליקציה לספק למשתמש האפליקציה את השירותים, כולם או חלקם; במידה ויבקש משתמש האפליקציה ממפעיל
+            האפליקציה למחוק את המידע האישי לגביו, מפעיל האפליקציה שומר לעצמו את הזכות להפוך את המידע האישי למידע
+            סטטיסטי, שלא יאפשר זיהוי שלך.
+            <br>
+            9. אבטחת מידע
+            מפעיל האפליקציה מיישם מערכות ונהלים עדכניים לאבטחת מידע; מערכות ונהלים אלה אומנם מקטינים את הסיכונים לחדירה
+            בלתי-מורשית למערכות המחשוב של מפעיל האפליקציה ולשרתיו, אולם הם אינם מספקים בטחון מוחלט מפני פריצה ו/או גישה
+            לא מורשית כאמור; לכן, מפעיל האפליקציה לא מתחייב ששירותיו יהיו חסינים לחלוטין מפני חדירה או גישה לא מורשית
+            למידע המאוחסן על גבי מערכות המחשוב של מפעיל האפליקציה; כמו כן, עליך להגן על הגישה למידע שעל מכשיר הנייד שלך
+            באמצעי אבטחה דוגמת טביעת אצבע, סיסמה שתוחלף מידי כמה חודשים (רצוי לשלב מספר אמצעי אבטחה).
+            <br>
+            10. דיוור
+            בשלב זה, לא ישלח דיוור למשתמש האפליקציה מטעם מפעיל האפליקציה, אולם מפעיל האפליקציה שומר לעצמו הזכות לשנות
+            זאת וככל שכך, יבקש את הסכמת משתמש האפליקציה לקבלת דיוור, כפי שיובא להלן:
+            ככל שיסכים משתמש האפליקציה לקבלת דיוור, הוא מסכים לקבל דואר אלקטרוני ו/או מסרונים או שיחות טלפוניות העונים
+            על הגדרת "דבר פרסומת", על פי תיקון 40 לחוק התקשורת (בזק ושידורים), התשמ"ב-1982 וזאת כל עוד לא מסר כל הודעה,
+            בה מבוקש להפסיק את קבלת דברי הפרסומת והפניות, בדרכים הקבועות בדין.
+            <br>
+            11. היעדר אחריות לנזקים
+            <br>
+            המפעיל לא יישא באחריות לנזקים, אבדן רווחים, פגיעה בשם טוב, הסתמכות, הוצאה, הפרת חוזה וכיו"ב– ישירים ו/או
+            עקיפים – שנגרמו, אם וככל שנגרמו, בשל פגיעה בסודיות פרטי המשתמש, אם בשל מתקפת סייבר, דרישת כופר או כל טעם אחר
+            שאינו מהווה מעשה מכוון או זדוני או עבירה פלילית של מפעיל האפליקציה ו/או מי מטעמו.
+
+            12. כל בקשה למסירת מידע – כולל מידע אישי ומידע פרטי, ככל שזו תוגש בהתאם להליך חוקי, כגון צו חיפוש, צו
+            בית-משפט וכדומה, תיענה על ידי המפעיל וזאת מבלי שצריך המפעיל למסור הודעה מוקדמת על כך למשתמש.
+
+            הטקסט כתוב בלשון זכר אך מופנה לשני המינים.
+        </div>
+        <span class="popup-close" onclick="closePopup('terms-popup')">&times;</span>
+    </div>
+
+    <div class="popup" id="disclaimer-popup">
+        <div class="popup-header">
+            גילוי נאות
+        </div>
+        <div dir="rtl" class="popup-content">
+            הצעות ההשקעה שמספקת אפליקציה זו הן למטרות מידע והעשרה בלבד ואין בה כדי להוות ייעוץ/תיווך מסוג כלשהוא
+            (השקעות/ ביטוחי/ משפטי/ פנסיוני/ כלכלי/ חשבונאי/ מיסויי או אחר) ובפרט יודגש, כי האפליקציה ובכלל זה, המידע
+            האמור בה אינם מהווים ייעוץ השקעות ו/או שיווק השקעות ו/או ניהול תיקי השקעות כהגדרתם בחוק הסדרת העיסוק בייעוץ
+            השקעות, בשיווק השקעות ובניהול תיקי השקעות, תשנ"ה-1995, וכן, המידע המובא באפליקציה אינו תחליף לכך אלא מדובר
+            במידע כללי בלבד אודות אפיקי השקעה כלליים, שהמידע לגביהם מובא למשתמש האפליקציה בהתאם לתשובות על השאלון המוצג
+            באפליקציה והפרופיל, שבונה משתמש האפליקציה בהתאם לכך. לפיכך, הצעות אלה אינן מהוות ייעוץ מותאם אישית ואין
+            להסתמך עליהן ככאלה. מפעיל האפליקציה אינו בעל רישיון בייעוץ השקעות/ שיווק השקעות/ ניהול וכיו"ב ועל כן, לפני
+            קבלת כל החלטת השקעה, מומלץ להתייעץ עם בעל הרישיון המתאים. קבלת ייעוץ, שיווק, ביצוע עסקאות והתאמת אפיקי השקעה
+            רלוונטיים למשתמש, ייעשו באמצעות בעלי רישיון מתאים בלבד ולא באמצעות אפליקציה זו. המידע הנמסר באפליקציה נסמך
+            על תשובותיו של משתמש האפליקציה לשאלון המוצג בה ומשכך המידע שנמסר למשתמש האפליקציה אינו מדויק ועלול לא להתאים
+            למשתמש האפליקציה.
+            על ידי שימוש באפליקציה זו, אתה מאשר ומסכים שכל החלטה שאתה מקבל, ובכלל זה, החלטת השקעה היא באחריותך בלבד.
+            בהתאם, המפעיל לא יהיה אחראי להשלכות ו/או תוצאות ו/או הפסדים ו/או אובדן רווחים ו/או נזקים, ישירים ו/או
+            עקיפים, שעלולים להיגרם בשל החלטות שקיבל משתמש האפליקציה ולרבות החלטות השקעה שקיבל בעקבות המידע אליו נחשף
+            באפליקציה /או בעקבות הסתמכות על מידע זה. כל החלטה, ולרבות החלטת השקעה, שיקבל משתמש האפליקציה היא באחריותו
+            הבלעדית של משתמש האפליקציה. השימוש שלך באפליקציה זו מעיד על הסכמתך לכתב ויתור זה.
+        </div>
+        <span class="popup-close" onclick="closePopup('disclaimer-popup')">&times;</span>
+    </div>
+
+    <div class="header">
+        <img class="logo-img unselectable" id="logo-img" draggable="false" src="images/logos/InvestingHelper Logo.png"
+            alt="InvestingHelper Logo">
+    </div>
+
+    <div class="loader-container" id="loader">
+        <img class="final-loader-title responsive-img" data-desktop="images/desktop/others/loader text desktop.png"
+            data-mobile="images/mobile/others/loader text mobile.png" src="images/mobile/others/loader text mobile.png"
+            alt="">
+        <img class="start-loader-title responsive-img" data-desktop="images/desktop/others/start loader text.png"
+            data-mobile="images/mobile/others/start loader text.png" src="images/mobile/others/start loader text.png"
+            alt="">
+        <div class="loader">
+            <img src="images/logos/InvestingHelper Loader.png" alt="Loader Image">
+        </div>
+    </div>
+
+    <div class="container" id="intro">
+        <img class="intro-img unselectable responsive-img" id="intro-img" draggable="false"
+            data-desktop="images/desktop/others/InvestingHelper Intro Desktop.png"
+            data-mobile="images/mobile/others/InvestingHelper Intro Mobile.png"
+            src="images/mobile/others/InvestingHelper Intro Mobile.png" alt="">
+        <div class="checkbox">
+            <div class="terms-container">
+
+                <label for="terms-checkbox">
+                    קראתי ואני מסכימ\ה
+                    <a href="#" onclick="openPopup(event, 'terms-popup')">לתנאי השימוש ומדיניות הפרטיות</a>
+                </label>
+                <input type="checkbox" id="terms-checkbox">
+            </div>
+            <div class="disclaimer-container">
+
+                <label for="disclaimer-checkbox">
+                    אני מאשר\ת שקראתי את
+                    <a href="#" onclick="openPopup(event, 'disclaimer-popup')">גילוי הנאות</a>
+                </label>
+                <input type="checkbox" id="disclaimer-checkbox">
+            </div>
+            <!-- <form dir="rtl" id="emailForm">
+                <label for="email">אימייל:</label>
+                <input id="email" name="email" required>
+                <br>
+                <label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    אני מסכימ/ה לקבלת תוכן פרסומי
+                </label> -->
+
+        </div>
+        <button onclick="start()" id="start-btn">התחלת שאלון התאמה</button>
+    </div>
+
+    <div class="container" id="questionnaire" style="display: none;">
+        <h1>שאלון התאמת אפיק השקעה</h1>
+    </div>
+
+    <div class="result-container" id="snp500-screen" style="display: none;">
+        <h2>S&P500</h2>
+        <h3 class="first-invest">השקעה ראשונית במסלול: </h3>
+        <h4 class="month-invest">השקעה חודשית קבועה במסלול: </h4>
+        <div class="img-container">
+
+            <img class="result-img responsive-img" data-desktop="images/desktop/resultsDesktop/NEW S&P500 1.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 1.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 1.png" alt="">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 2.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 2.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 2.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 3.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 3.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 3.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 4.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 4.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 4.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 5.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 5.png"
+                src="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 5.png" alt="">
+
+            <img class="mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 6.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 Mobile/S&P500 Mobile 6.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 6.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="result-container" id="acwi-screen" style="display: none;">
+        <h2 dir="rtl">מדד עולמי ACWI</h2>
+        <h3 class="first-invest">השקעה ראשונית במסלול: </h3>
+        <h4 class="month-invest">השקעה חודשית קבועה במסלול: </h4>
+        <div class="img-container">
+
+            <img class="result-img responsive-img" data-desktop="images/desktop/resultsDesktop/NEW ACWI 1.png"
+                data-mobile="images/mobile/resultsMobile/ACWI Mobile/ACWI Mobile 1.png"
+                src="images/desktop/resultsDesktop/NEW ACWI 1.png" alt="">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW ACWI 2.png"
+                data-mobile="images/mobile/resultsMobile/ACWI Mobile/ACWI Mobile 2.png"
+                src="images/desktop/resultsDesktop/NEW ACWI 2.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW ACWI 3.png"
+                data-mobile="images/mobile/resultsMobile/ACWI Mobile/ACWI Mobile 3.png"
+                src="images/desktop/resultsDesktop/NEW ACWI 3.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW ACWI 4.png"
+                data-mobile="images/mobile/resultsMobile/ACWI Mobile/ACWI Mobile 4.png"
+                src="images/desktop/resultsDesktop/NEW ACWI 4.png" alt="">
+
+            <img class="mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW ACWI 5.png"
+                data-mobile="images/mobile/resultsMobile/ACWI Mobile/ACWI Mobile 5.png"
+                src="images/desktop/resultsDesktop/NEW ACWI 5.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="result-container" id="snp-memunaf2-screen" style="display: none;">
+        <h2>ממונף פי 2 - S&P500</h2>
+        <h3 class="first-invest">השקעה ראשונית במסלול: </h3>
+        <h4 class="month-invest">השקעה חודשית קבועה במסלול: </h4>
+        <div class="img-container">
+
+            <img class="result-img  responsive-img" data-desktop="images/desktop/resultsDesktop/NEW S&P500 X2 1.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 X2 Mobile/S&P500 X2 Mobile 1.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 X2 1.png" alt="">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 X2 2.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 X2 Mobile/S&P500 X2 Mobile 2.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 X2 2.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 X2 3.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 X2 Mobile/S&P500 X2 Mobile 3.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 X2 3.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 X2 4.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 X2 Mobile/S&P500 X2 Mobile 4.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 X2 4.png" alt="">
+
+            <img class="mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW S&P500 X2 5.png"
+                data-mobile="images/mobile/resultsMobile/S&P500 X2 Mobile/S&P500 X2 Mobile 5.png"
+                src="images/desktop/resultsDesktop/NEW S&P500 X2 5.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="result-container" id="nasdaq100-screen" style="display: none;">
+        <h2>נאסד"ק 100</h2>
+        <h3 class="first-invest">השקעה ראשונית במסלול: </h3>
+        <h4 class="month-invest">השקעה חודשית קבועה במסלול: </h4>
+        <div class="img-container">
+
+            <img class="result-img  responsive-img" data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 1.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 1.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 1.png" alt="">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 2.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 2.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 2.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 3.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 3.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 3.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 4.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 4.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 4.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 5.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 5.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 5.png" alt="">
+
+            <img class="mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW NASDAQ100 6.png"
+                data-mobile="images/mobile/resultsMobile/Nasdaq100 Mobile/Nasdaq100 6.png"
+                src="images/desktop/resultsDesktop/NEW NASDAQ100 6.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="result-container" id="default-screen" style="display: none;">
+        <h2>קרן כספית</h2>
+        <h3 class="first-invest">השקעה ראשונית במסלול: </h3>
+        <h4 class="month-invest">השקעה חודשית קבועה במסלול: </h4>
+        <div class="img-container">
+
+            <img class="result-img  responsive-img" data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 1.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 1.png"
+                src="images/desktop/resultsDesktop/NEW קרן כספית 1.png" alt="">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 2.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 2.png"
+                src="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 2.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 3.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 3.png"
+                src="images/desktop/resultsDesktop/NEW קרן כספית 3.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 4.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 4.png"
+                src="images/desktop/resultsDesktop/NEW קרן כספית 4.png" alt="">
+
+            <img class="no-mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 5.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 5.png"
+                src="images/desktop/resultsDesktop/NEW קרן כספית 5.png" alt="">
+
+            <img class="mishar-atzmai-img scroll-img result-img responsive-img"
+                data-desktop="images/desktop/resultsDesktop/NEW קרן כספית 6.png"
+                data-mobile="images/mobile/resultsMobile/KerenCaspit Mobile/KerenCaspit Mobile 6.png"
+                src="images/desktop/resultsDesktop/NEW קרן כספית 6.png" alt="">
+        </div>
+    </div>
+
+    <div class="result-container" id="keren-caspit-screen" style="display: none;">
+        <div id="keren-caspit-part-1">
+
+            <img class="scroll-img result-img responsive-img"
+                data-desktop="images/desktop/others/NEW קרן ביטחון 1 (לפני המחשבון).png"
+                data-mobile="images/mobile/others/קרן ביטחון 1.png"
+                src="images/desktop/others/NEW קרן ביטחון 1 (לפני המחשבון).png" alt="">
+
+            <h1>מחשבון קרן ביטחון</h1>
+            <form dir="rtl" id="calculator-form" class="calc-form">
+                <label for="income" class="calc-label">הכנסה חודשית (נטו):</label>
+                <input type="number" id="income" name="income" class="calc-input" required><br>
+                <label for="loans" class="calc-label">סך כל התשלומים החודשיים להלוואות ולהתחייבויות שלכם:</label>
+                <input type="number" id="loans" name="loans" class="calc-input" required><br>
+                <button type="button" class="calc-btn" onclick="calculateEmergencyFund()">חשב</button>
+            </form>
+            <h2 dir="rtl" id="result" class="calc-result"></h2>
+        </div>
+
+        <img class="scroll-img result-img responsive-img"
+            data-desktop="images/desktop/others/NEW  קרן ביטחון 2 (אחרי המחשבון).png"
+            data-mobile="images/mobile/others/קרן ביטחון 2.png"
+            src="images/desktop/others/NEW  קרן ביטחון 2 (אחרי המחשבון).png" alt="">
+    </div>
+
+    <div class="result-container" id="atzmai-hishtalmut-screen" style="display: none;">
+
+        <img class="scroll-img result-img responsive-img"
+            data-desktop="images/desktop/others/NEW עצמאי ו_יש_ קרן השתלמות.png"
+            data-mobile="images/mobile/others/יש_ קרן השתלמות עצמאי.png"
+            src="images/desktop/others/NEW עצמאי ו_יש_ קרן השתלמות.png" alt="">
+
+    </div>
+
+    <div class="result-container" id="atzmai-no-hishtalmut-screen" style="display: none;">
+
+        <img class="scroll-img result-img responsive-img"
+            data-desktop="images/desktop/others/NEW עצמאי ו_אין_ קרן השתלמות.png"
+            data-mobile="images/mobile/others/אין_ קרן השתלמות עצמאי.png"
+            src="images/desktop/others/NEW עצמאי ו_אין_ קרן השתלמות.png" alt="">
+
+    </div>
+
+
+
+    <div class="footer">
+        © 2024 InvestingHelper by Or Malka. All rights reserved.
+        <br>
+        © Developed by Amit Cohen 2024.
+    </div>
+
+
+    <script src="js/mq.js"></script> <!-- Line 473 -->
+    <script src="js/main.js"></script> <!-- Line 474 -->
+    <!-- <script src="js/preventaccess.js"></script> -->
+
+    <script src="https://cdn.enable.co.il/licenses/enable-L18904eoxr31clfq-0423-60213/init.js"></script>
+</body>
+
+
+</html>

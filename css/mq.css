@@ -1,0 +1,85 @@
+/* © 2024 InvestingHelper by Or Malka. All rights reserved. | © 2024 InvestingHelper by Or Malka. כל הזכויות שמורות. */
+/*!
+ * Copyright (c) 2024 InvestingHelper by Or Malka. All rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ */
+/*!
+ * זכויות יוצרים (c) 2024 InvestingHelper מאת אור מלכה. כל הזכויות שמורות.
+ * העתקה בלתי מורשית של קובץ זה, בכל אמצעי, אסורה בהחלט.
+ * קנייני וסודי.
+ */
+
+@media (max-width: 767px) {
+
+    .logo-img {
+        height: 40px;
+        width: 333px;
+        margin: 15px;
+    }
+
+    body,
+    html {
+        -webkit-touch-callout: none;
+    }
+
+    #intro {
+        max-width: 80vw;
+        width: 80vw;
+    }
+
+    .container {
+        max-width: 80vw;
+    }
+
+    .question-title-h2 {
+        margin-bottom: 20px;
+    }
+
+    button.question-btn {
+        width: 70vw;
+        max-width: 70vw;
+        min-height: 60px;
+    }
+
+    button.question-btn:hover {
+        background-color: #f8f9fa;
+        color: #302B2B;
+    }
+
+    .hint-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .loader {
+        width: 180px;
+        height: 180px;
+    }
+
+    .loader img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .start-loader-title,
+    .final-loader-title {
+        width: 400px;
+        margin-bottom: 100px;
+        margin-top: -150px;
+
+    }
+
+
+    .scroll-img {
+        width: 100%;
+        opacity: 0;
+        transform: translateY(25px);
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+    }
+
+    .scroll-img.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
